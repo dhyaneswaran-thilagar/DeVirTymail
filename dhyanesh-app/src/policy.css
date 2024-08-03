@@ -1,0 +1,310 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("free-wide-angle-shot-of-a-single-tree-growing-under-a-clouded-sky-during-a-sunset-surrounded-by-grass-free-photo.jpg");      
+background-size:cover;
+background-attachment: fixed;
+margin: 0; 
+padding: 0;
+font-family: Arial, sans-serif; 
+}
+.two{
+    display: flex;
+    justify-content: space-between;
+}
+.two ul li{
+    margin-top: -10px;
+    font-size: 18px;
+    margin-right: 30px;
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 95px;
+}
+.two ul li a{
+    color: white;
+    transition-duration: 0s;
+}
+.two h1{
+    margin-top: 10px;
+    font-size: 50px;
+    margin-left: 30px;
+    color: orangered;
+}
+.two ul  input{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background: none;
+    border-color: orangered;
+    border-right: none;
+    color:white;
+    
+}
+.two ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.two ul li a:hover {
+    color: orangered;
+}
+.two ul ::placeholder{
+    color: white;
+    text-align: left;
+    font-size: 14px;
+}
+.two ul button{
+    color: white;
+    background-color: orangered;
+    margin-top: -10px;
+    margin-right: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;    
+}
+.three{
+    color: orangered;
+    font-size: 40px;
+    margin-left: 500px;
+    margin-bottom: -10px;
+}
+.four {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    font-size: 20px;
+}
+.four a{
+    color: orangered;
+    text-decoration: none;
+}
+
+.five{
+    margin-top: 40px;
+    color: orangered;
+    margin-left: 50px;
+    margin-right: 50px;
+   font-size: 20px;
+}
+.six{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.seven{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.seven ul{
+    color: white;
+    list-style-type: none; 
+  }
+  
+  .seven li:before {
+    content: "•"; 
+    color: orangered; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
+  }
+.eight{  
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+        
+}
+.eight p {
+    color: white;
+}
+
+.eight span.highlight {
+    color: orangered;
+}
+.eight a{
+    color: orangered;
+    text-decoration: none;
+}
+.nine{
+    margin-top: 40px;
+    color: orangered;
+    margin-left: 50px;
+    margin-right: 50px;
+   font-size: 20px;
+}
+.ten{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.eleven{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.eleven ul{
+    color: white;
+    list-style-type: none; 
+  }
+  
+  .eleven li:before {
+    content: "•"; 
+    color: orangered; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
+  }
+  .twelve{
+    margin-top: -10px;
+    margin-left: 100px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+  .twelve li{
+    color: white;
+    list-style-type: none; 
+
+  }
+  
+  .twelve li:before {
+    content: "•"; 
+    color: none; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
+  }
+.thirteen{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.thirteen span.highlight {
+    color: orangered;
+}
+.fourteen{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.fourteen span.highlight {
+    color: orangered;
+}
+.fifteen{
+    margin-top: 40px;
+    color: orangered;
+    margin-left: 50px;
+    margin-right: 50px;
+   font-size: 20px;
+}
+.sixteen{
+    margin-top: 40px;
+    color: orangered;
+    margin-left: 50px;
+    margin-right: 50px;
+   font-size: 20px;
+}
+.seventeen{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.seventeen span.highlight {
+    color: orangered;
+}
+.eighteen{
+    margin-top: 40px;
+    color: orangered;
+    margin-left: 50px;
+    margin-right: 50px;
+   font-size: 20px;
+}
+.nineteen{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.nineteen span.highlight {
+    color: orangered;
+}
+.twenty{
+    margin-top: 40px;
+    color: orangered;
+    margin-left: 50px;
+    margin-right: 50px;
+   font-size: 20px;
+}
+.twenty1{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.twenty1 span.highlight {
+    color: orangered;
+}
+.twenty2{
+    margin-top: 40px;
+    color: orangered;
+    margin-left: 50px;
+    margin-right: 50px;
+   font-size: 20px;
+}
+.twenty3{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.twenty3 span.highlight {
+    color: orangered;
+}
+.twenty3 a{
+   text-decoration: none;
+   color: orangered;
+}
+.twenty4{
+    margin-top: 40px;
+    color: orangered;
+    margin-left: 50px;
+    margin-right: 50px;
+   font-size: 20px;
+}
+.twenty5{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.twenty5 span.highlight {
+    color: orangered;
+}
+.twenty6{
+    margin-top: 40px;
+    color: orangered;
+    margin-left: 50px;
+   margin-right: 50px;
+   font-size: 20px;
+}
+.twenty7{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.twenty7 span.highlight {
+    color: orangered;
+}
+.twenty7 a{
+    color: orangered;
+    text-decoration: none;
+}

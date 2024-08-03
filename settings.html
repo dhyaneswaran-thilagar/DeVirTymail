@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeVirTy-SETTINGS</title>
+    <link rel="icon" href="C:\Users\dhyan\Downloads\mail\DL.jpg">
+</head>
+<style>
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("free-wide-angle-shot-of-a-single-tree-growing-under-a-clouded-sky-during-a-sunset-surrounded-by-grass-free-photo.jpg");      
+        background-size:cover;
+        background-attachment: fixed;
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    }
+    .two{
+        display: flex;
+        justify-content: space-between;
+    }
+    .two ul li{
+        margin-top: -10px;
+        font-size: 18px;
+        margin-right: 30px;
+        display: inline-block;
+        justify-content: space-between;
+        margin-right: 95px;
+    }
+    .two ul li a{
+        color: white;
+        transition-duration: 0s;
+    }
+    .two h1{
+        margin-top: 10px;
+        font-size: 50px;
+        margin-left: 30px;
+        color: orangered;
+    }
+    .two ul  input{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        background: none;
+        border-color: orangered;
+        border-right: none;
+        color:white;
+        
+    }
+    .two ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .two ul li a:hover {
+        color: orangered;
+    }
+    .two ul ::placeholder{
+        color: white;
+        text-align: left;
+        font-size: 14px;
+    }
+    .two ul button{
+        color: white;
+        background-color: orangered;
+        margin-top: -10px;
+        margin-right: 70px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;    
+    }
+    .three{
+        color:orangered;
+        margin-left: 550px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    .question-box {
+        position: relative; /* Make the container position relative */
+        background-color:rgba(3, 3, 3, 0.2);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden; /* Hide overflow to contain the "+" */
+    }
+    
+    .plus {
+        position: absolute; /* Position the "+" absolutely */
+        top: 15px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: orangered;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .question{
+        color: orangered;
+        font-size: 30px;
+    }
+
+    .question-box2 {
+        position: relative; /* Make the container position relative */
+        background-color:rgba(3, 3, 3, 0.2);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden; /* Hide overflow to contain the "+" */
+    }
+    
+    .plus2 {
+        position: absolute; /* Position the "+" absolutely */
+        top: 15px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: orangered;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+
+    .question2{
+        color: orangered;
+        font-size: 30px;
+    }
+
+    .question-box3 {
+        position: relative; /* Make the container position relative */
+        background-color:rgba(3, 3, 3, 0.2);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden; /* Hide overflow to contain the "+" */
+    }
+    
+    .plus3 {
+        position: absolute; /* Position the "+" absolutely */
+        top: 15px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: orangered;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .answer3 {
+        display: none;
+        color: white;
+        margin-top: 10px; /* Add margin for spacing */
+        font-size: 20px;
+    }
+    
+    .answer3 ul {
+        list-style-type: disc; /* Set bullet point style */
+        padding-left: 20px; /* Add indentation for bullet points */
+    }
+    
+    .answer3 li {
+        margin-bottom: 8px; /* Add margin between list items */
+    }
+    .question3{
+        color: orangered;
+        font-size: 30px;
+    }
+
+
+    .question-box4{
+        position: relative; /* Make the container position relative */
+        background-color:rgba(3, 3, 3, 0.2);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden; /* Hide overflow to contain the "+" */
+    }
+    
+    .plus4 {
+        position: absolute; /* Position the "+" absolutely */
+        top: 15px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: orangered;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .answer4 {
+        display: none;
+        color: white;
+        margin-top: 10px; /* Add margin for spacing */
+        font-size: 20px;
+    }
+    
+    .answer4 ul {
+        list-style-type: disc; /* Set bullet point style */
+        padding-left: 20px; /* Add indentation for bullet points */
+        font-size: 20px;
+    }
+    
+    .answer4 li {
+        margin-bottom: 8px; /* Add margin between list items */
+    }
+    .question4{
+        color: orangered;
+        font-size: 30px;
+    }
+    .question-box5{
+        position: relative; /* Make the container position relative */
+        background-color:rgba(3, 3, 3, 0.2);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden; /* Hide overflow to contain the "+" */
+    }
+    
+    .plus5 {
+        position: absolute; /* Position the "+" absolutely */
+        top: 15px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: orangered;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .answer5{
+        display: none;
+        color: white;
+        margin-top: 10px; /* Add margin for spacing */
+        font-size: 20px;
+    }
+    
+    .answer5 ul {
+        list-style-type: disc; /* Set bullet point style */
+        padding-left: 20px; /* Add indentation for bullet points */
+    }
+    
+    .answer5 li {
+        margin-bottom: 8px; /* Add margin between list items */
+    }
+    .question5{
+        color: orangered;
+        font-size: 30px;
+    }
+
+    .question-box6{
+        position: relative; /* Make the container position relative */
+        background-color:rgba(3, 3, 3, 0.2);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden; /* Hide overflow to contain the "+" */
+    }
+    
+    .plus6 {
+        position: absolute; /* Position the "+" absolutely */
+        top: 15px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: orangered;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .answer6{
+        display: none;
+        color: white;
+        margin-top: 10px; /* Add margin for spacing */
+        font-size: 20px;
+    }
+    .answer6 a{
+        text-decoration: none;
+        color: orangered;
+    }
+    
+    .answer6 ul {
+        list-style-type: disc; /* Set bullet point style */
+        padding-left: 20px; /* Add indentation for bullet points */
+    }
+    
+    .answer6 li {
+        margin-bottom: 8px; /* Add margin between list items */
+    }
+    .question6{
+        color: orangered;
+        font-size: 30px;
+    }
+    .question-box7{
+        position: relative; /* Make the container position relative */
+        background-color:rgba(3, 3, 3, 0.2);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden; /* Hide overflow to contain the "+" */
+    }
+    
+    .plus7 {
+        position: absolute; /* Position the "+" absolutely */
+        top: 15px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: orangered;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .answer7{
+        display: none;
+        color: white;
+        margin-top: 10px; /* Add margin for spacing */
+        font-size: 20px;
+    }
+    .answer7 a{
+        text-decoration: none;
+        color: orangered;
+    }
+    
+    .answer7 ul {
+        list-style-type: disc; /* Set bullet point style */
+        padding-left: 20px; /* Add indentation for bullet points */
+    }
+    
+    .answer7 li {
+        margin-bottom: 8px; /* Add margin between list items */
+    }
+    .question7{
+        color: orangered;
+        font-size: 30px;
+    }
+    .questiona{
+        margin-top: 10px;
+        color: rgb(140, 148, 148);
+        font-size: 20px;
+    }
+    .questionb{
+        margin-top: 10px;
+        color: rgb(140, 148, 148);
+        font-size: 20px;
+    }
+    .questionc{
+        margin-top: 7px;
+        color: rgb(140, 148, 148);
+        font-size: 20px;
+    }
+    .questiond{
+        margin-top: 7px;
+        color: rgb(140, 148, 148);
+        font-size: 20px;
+    }
+    .questione{
+        margin-top: 10px;
+        color: rgb(140, 148, 148);
+        font-size: 20px;
+    }
+    .questionf{
+        margin-top: 10px;
+        color: rgb(140, 148, 148);
+        font-size: 20px;
+    }
+    .questiong{
+        margin-top: 10px;
+        color: rgb(140, 148, 148);
+        font-size: 20px;
+    }
+    .circle {
+        margin-left: 1420px;
+        margin-top: -45px;
+        width: 30px;
+        height: 30px;
+        background-color: orangered; /* Transparent black */
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .circle2 {
+        margin-left: 1420px;
+        margin-top: -45px;
+        width: 30px;
+        height: 30px;
+        background-color: orangered; /* Transparent black */
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .circle3 {
+        margin-left: 1420px;
+        margin-top: -45px;
+        width: 30px;
+        height: 30px;
+        background-color: orangered; /* Transparent black */
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .circle4 {
+        margin-left: 1420px;
+        margin-top: -45px;
+        width: 30px;
+        height: 30px;
+        background-color: orangered; /* Transparent black */
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .circle5 {
+        margin-left: 1420px;
+        margin-top: -45px;
+        width: 30px;
+        height: 30px;
+        background-color: orangered; /* Transparent black */
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .circle6 {
+        margin-left: 1420px;
+        margin-top: -45px;
+        width: 30px;
+        height: 30px;
+        background-color: orangered; /* Transparent black */
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      
+      #tick {
+        display: none; /* Initially hidden */
+        margin-top: -24px;
+        margin-left: 1430px;
+        font-size: 0.8em;
+        color: white;
+      }
+      #tick1 {
+        display: none; /* Initially hidden */
+        margin-top: -24px;
+        margin-left: 1430px;
+        font-size: 0.8em;
+        color: white;
+      }
+      #tick2 {
+        display: none; /* Initially hidden */
+        margin-top: -24px;
+        margin-left: 1430px;
+        font-size: 0.8em;
+        color: white;
+      }
+      #tick3 {
+        display: none; /* Initially hidden */
+        margin-top: -24px;
+        margin-left: 1430px;
+        font-size: 0.8em;
+        color: white;
+      }
+      #tick4 {
+        display: none; /* Initially hidden */
+        margin-top: -24px;
+        margin-left: 1430px;
+        font-size: 0.8em;
+        color: white;
+      }
+      #tick5 {
+        display: none; /* Initially hidden */
+        margin-top: -24px;
+        margin-left: 1430px;
+        font-size: 0.8em;
+        color: white;
+      }
+      #tick6 {
+        display: none; /* Initially hidden */
+        margin-top: -24px;
+        margin-left: 1430px;
+        font-size: 0.8em;
+        color: white;
+      }
+
+      .answer {
+        margin-bottom: 20px;
+        margin-left: -20px;
+        height: 100%; 
+        color: transparent;
+    }   
+    
+    .answer textarea {
+        margin-top: 20px;
+        background: none;
+        border: none;
+        border-radius: 0; 
+        color: white;
+        width: 100%;
+        height: 100%;
+        outline: none; 
+        resize: none; 
+        overflow-y: auto; 
+    }
+    
+    .answer ::placeholder {
+        color: orangered;
+        text-align: left;
+        margin-left: 50px;
+        font-size: 14px;
+    }
+    #textInput{
+    margin-left: 20px;
+    color: white;
+    }
+    .answer2 {
+        margin-bottom: 20px;
+        margin-left: -20px;
+        height: 100%; 
+        color: orangered;
+    }   
+    
+    .answer2 textarea {
+        margin-top: 20px;
+        background: none;
+        border: none;
+        border-radius: 0; 
+        color: white;
+        width: 100%;
+        height: 100%;
+        outline: none; 
+        resize: none; 
+        overflow-y: auto; 
+    }
+    
+    .answer2 ::placeholder {
+        color: orangered;
+        text-align: left;
+        margin-left: 50px;
+        font-size: 14px;
+    }
+    
+    #textInput{
+    margin-left: 20px;
+    color: white;
+    }
+</style>
+<body>
+    <div class="one">
+        <div class="two">
+            <h1>DeVirTy</h1>
+            <ul>
+                <li><a href="C:/Users/dhyan/Downloads/mail/firstpage.html"><h4>HOME</h4></a></li>
+                <li><a href="C:\Users\dhyan\Downloads\mail\about2.html"><h4>ABOUT</h4></a></li>
+                <li><a href="C:\Users\dhyan\Downloads\mail\privacypolicy.html"><h4>POLICY</h4></a></li>
+                <li><a href="C:/Users/dhyan/Downloads/mail/faq2.html"><h4>FAQ'S</h4></a></li>
+                <li><a href="C:\Users\dhyan\Downloads\mail\contact2.html"><h4>CONTACT</h4></a></li>
+                <input type="text" placeholder="Type to Search"><button type="Button">Search<span></span></button>
+            </ul> 
+        </div>
+        <div class="three">
+            <h1>DeVirTy's Settings</h1>
+        </div>
+        <div class="question-box2" onclick="toggleAnswer2()">
+            <div class="question2">Signature</div>
+            <div class="questiona">Customize your Email's Signature</div>
+            <div class="circle" id="circle5"></div>
+            <div id="tick5">&#10003;</div>   
+            <div class="answer2" id="answer2">
+                    <textarea id="textInput" oninput="handleInput(event)" onkeydown="handleKeyDown(event)"></textarea>
+                </div>
+              </div>
+        </div>
+        <div class="question-box" onclick="toggleAnswer()">
+            <div class="question">Tags</div>
+            <div class="questionb">Add/Remove/Edit tags</div>
+            <div class="circle" id="circle6"></div>
+            <div id="tick6">&#10003;</div>   
+            <div class="answer" id="answer">
+                    <textarea id="textInput" oninput="handleInput(event)" onkeydown="handleKeyDown(event)"></textarea>
+                </div>
+              </div>
+        </div>
+        <div class="question-box3" onclick="toggleAnswer3()">
+            <div class="question3">Inbox</div>
+            <div class="questionc">Organize by Subject,Seperate Inbox/Sent</div>
+            <div class="circle" id="circle"></div>
+            <div id="tick">&#10003;</div>   
+    </div>
+    <div class="question-box4" onclick="toggleAnswer3()">
+        <div class="question4">Subject</div>
+        <div class="questiond">Organize by Subject,All recent activity</div>
+        <div class="circle" id="circle1"></div>
+            <div id="tick1">&#10003;</div> 
+    </div>  
+
+    <div class="question-box5" onclick="toggleAnswer3()">
+        <div class="question5">People</div>
+        <div class="questione">Organize by People,All recent activity</div>
+        <div class="circle" id="circle2"></div>
+            <div id="tick2">&#10003;</div> 
+    </div> 
+
+    <div class="question-box6" onclick="toggleAnswer3()">
+        <div class="question6">Theme</div>
+        <div class="questionf">Light</div>
+        <div class="circle" id="circle3"></div>
+            <div id="tick3">&#10003;</div> 
+    </div> 
+    
+    <div class="question-box7" onclick="toggleAnswer3()">
+        <div class="question7">Account Color Coding</div>
+        <div class="questiong">On</div>
+        <div class="circle" id="circle4"></div>
+            <div id="tick4">&#10003;</div> 
+    </div> 
+    </div>
+    <script>
+        function toggleAnswer(event) {
+            var answer = document.getElementById("answer");
+            var plus = document.getElementById("plus");
+        
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+                plus.innerHTML = "-";
+            } else {
+                // Check if the click event occurred inside the answer box
+                if (!answer.contains(event.target)) {
+                    answer.style.display = "none";
+                    plus.innerHTML = ">";
+                }
+            }
+        }
+        
+        function toggleAnswer2(event) {
+            var answer = document.getElementById("answer2");
+            var plus = document.getElementById("plus2");
+        
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+                plus.innerHTML = "-";
+            } else {
+                // Check if the click event occurred inside the answer box
+                if (!answer.contains(event.target)) {
+                    answer.style.display = "none";
+                    plus.innerHTML = ">";
+                }
+            }
+        }
+        
+        const circle = document.getElementById('circle');
+        const tick = document.getElementById('tick');
+        const circle1 = document.getElementById('circle1');
+        const tick1 = document.getElementById('tick1');
+        const circle2 = document.getElementById('circle2');
+        const tick2 = document.getElementById('tick2');
+        const circle3 = document.getElementById('circle3');
+        const tick3 = document.getElementById('tick3');
+        const circle4 = document.getElementById('circle4');
+        const tick4 = document.getElementById('tick4');
+        const circle5 = document.getElementById('circle5');
+        const tick5 = document.getElementById('tick5');
+        const circle6 = document.getElementById('circle6');
+        const tick6 = document.getElementById('tick6');
+        
+        let selected = false;
+        let selected1 = false;
+        let selected2 = false;
+        let selected3 = false;
+        let selected4 = false;
+        let selected5 = false;
+        let selected6 = false;
+        
+        circle.addEventListener('click', () => {
+          if (!selected) {
+            tick.style.display = 'block';
+            selected = true;
+          } else {
+            tick.style.display = 'none';
+            selected = false;
+          }
+        });
+         
+        circle1.addEventListener('click', () => {
+            if (!selected1) {
+                tick1.style.display = 'block';
+                selected1 = true;
+            } else {
+                tick1.style.display = 'none';
+                selected1 = false;
+            }
+        });
+        circle2.addEventListener('click', () => {
+            if (!selected2) {
+                tick2.style.display = 'block';
+                selected2 = true;
+            } else {
+                tick2.style.display = 'none';
+                selected2 = false;
+            }
+        });
+        circle3.addEventListener('click', () => {
+            if (!selected3) {
+                tick3.style.display = 'block';
+                selected3 = true;
+            } else {
+                tick3.style.display = 'none';
+                selected3 = false;
+            }
+        });
+        circle4.addEventListener('click', () => {
+            if (!selected4) {
+                tick4.style.display = 'block';
+                selected4 = true;
+            } else {
+                tick4.style.display = 'none';
+                selected4 = false;
+            }
+        });
+        circle5.addEventListener('click', () => {
+            if (!selected5) {
+                tick5.style.display = 'block';
+                selected5 = true;
+            } else {
+                tick5.style.display = 'none';
+                selected5 = false;
+            }
+        });
+        circle6.addEventListener('click', () => {
+            if (!selected6) {
+                tick6.style.display = 'block';
+                selected6 = true;
+            } else {
+                tick6.style.display = 'none';
+                selected6 = false;
+            }
+        });
+        
+        function handleInput(event) {
+            const textarea = event.target;
+            if (textarea.value === "Type your content here...") {
+                textarea.value = "";
+            }
+            textarea.style.height = "auto";
+            textarea.style.height = (textarea.scrollHeight) + "px";
+        }
+    
+        function handleKeyDown(event) {
+            if (event.key === "Enter" && event.target.tagName.toLowerCase() === "textarea") {
+                event.preventDefault(); // Prevent the default behavior of the Enter key
+                
+                const input = event.target;
+                if (input.value.split('\n').length >= 1) {
+                    // Close the corresponding answer box if Enter key is pressed and at least one line is already entered
+                    if (input.id === "textInput") {
+                        toggleAnswer();
+                    } else if (input.id === "textInput2") {
+                        toggleAnswer2();
+                    }
+                } else {
+                    const scrollToEnd = input.scrollTop === (input.scrollHeight - input.clientHeight);
+                    input.value += "\n"; 
+                    input.style.height = "auto"; 
+                    input.style.height = (input.scrollHeight) + "px"; 
+                    if (scrollToEnd) {
+                        input.scrollTop = input.scrollHeight;
+                    }
+                }
+            }
+        }
+        
+    
+    </script>
+</body>
+</html>
+</body>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeVirTy-about </title>
+    <link rel="icon" href="C:\Users\dhyan\Downloads\mail\DL.jpg">
+</head>
+<style>
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("C:/Users/dhyan/Downloads/free-wide-angle-shot-of-a-single-tree-growing-under-a-clouded-sky-during-a-sunset-surrounded-by-grass-free-photo.jpg");      
+    background-size:cover;
+    background-attachment: fixed;
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    }
+    .two{
+        display: flex;
+        justify-content: space-between;
+    }
+    .two ul li{
+        margin-top: -10px;
+        font-size: 18px;
+        margin-right: 30px;
+        display: inline-block;
+        justify-content: space-between;
+        margin-right: 95px;
+    }
+    .two ul li a{
+        color: white;
+        transition-duration: 0s;
+    }
+    .two h1{
+        margin-top: 10px;
+        font-size: 50px;
+        margin-left: 30px;
+        color: orangered;
+    }
+    .two ul  input{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        background: none;
+        border-color: orangered;
+        border-right: none;
+        color:white;
+        
+    }
+    .two ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .two ul li a:hover {
+        color: orangered;
+    }
+    .two ul ::placeholder{
+        color: white;
+        text-align: left;
+        font-size: 14px;
+    }
+    .two ul button{
+        color: white;
+        background-color: orangered;
+        margin-top: -10px;
+        margin-right: 70px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;    
+    }
+    .three{
+color: orangered;
+margin-left: 270px;
+
+font-size: 45px;
+    }
+    .four{
+        color: white;
+        margin-left: 100px;
+        margin-right: 150px;
+        font-size: 20px;
+        margin-top: -30px;
+    }
+    .four span.highlight{
+        color: orangered;
+    }
+    .five{
+        margin-left:  900px;
+        margin-top: -520px;
+    }
+    .five img{
+        transform: scale(1.4);
+        height: 400px;
+        width:500px;
+    }
+    .six{
+        color: orangered;
+        margin-top: 150px;
+        margin-left: 350px;
+        font-size: 25px;
+    }
+    .six h2{
+        margin-left: 410px;
+        margin-top: -10px;
+    }
+    .seven{
+        color: white;
+        font-size: 20px;
+        margin-left: 350px;
+        margin-right: 300px;
+        margin-top: -10px;
+    }
+    .eight{
+        color: white;
+        font-size: 20px;
+        margin-left: 450px;
+        margin-right: 300px;
+        margin-top: -20px;
+    }
+    .nine{
+        color: white;
+        font-size: 20px;
+        margin-left: 700px;
+        margin-right: 300px;
+        margin-top: 30px;
+    }
+    .nine button{
+        background-color: orangered;
+        border: none;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+    }
+    .ten{
+        font-size: 25px;
+        color: orangered;
+        margin-left: 600px;
+        margin-top: 50px;
+    }
+
+    .team {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    
+    .member {
+        position: relative;
+        width: 320px;
+        height: 500px;
+        border: 0.1px solid ;
+        border-radius: 10px;
+        border-color: orangered;
+        transition: background-color 0.3s;
+        cursor: pointer;
+       
+    }
+    
+    .member:hover {
+        background-color: orangered;
+    }
+    .member:hover img {
+        opacity: 0.2; /* Hide image on hover */
+    }
+    .member:hover .name {
+        opacity: 0.2; /* Hide image on hover */
+    }
+    .member:hover .role {
+        opacity: 0.2; /* Hide image on hover */
+    }
+
+    
+    .member img {
+        width: 250px;
+        height: 250px; 
+        margin-top: 50px;
+        margin-left: 40px; 
+        border-radius: 50%;
+    }
+    
+    .member .name {
+        position: absolute;
+        bottom: 10px;
+        font-size: 40px;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.0);
+        color: orangered;
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .member .role {
+        position: absolute;
+        bottom: 10px;
+        font-size: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.0);
+        color: white;
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .member .info {
+        display: none;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 69, 0, 0.0);
+        color: white;
+        padding: 20px;
+        text-align: justify; /* Justify text to fill the entire width */
+        width: calc(100% - 20px); /* Calculate width to consider padding */
+    }
+    .member .info p {
+        margin: 0; /* Remove default margins */
+    }
+</style>
+<body>
+    <div class="one">
+        <div class="two">
+            <h1>DeVirTy</h1>
+            <ul>
+                <li><a href="C:/Users/dhyan/Downloads/mail/firstpage.html"><h4>HOME</h4></a></li>
+                <li><a href="C:\Users\dhyan\Downloads\mail\about2.html"><h4>ABOUT</h4></a></li>
+                <li><a href="C:\Users\dhyan\Downloads\mail\privacypolicy.html"><h4>POLICY</h4></a></li>
+                <li><a href="C:/Users/dhyan/Downloads/mail/faq2.html"><h4>FAQ'S</h4></a></li>
+                <li><a href="C:\Users\dhyan\Downloads\mail\contact2.html"><h4>CONTACT</h4></a></li>
+                <input type="text" placeholder="Type to Search"><button type="Button">Search<span></span></button>
+            </ul>
+        </div>
+        <div class="three">
+           <h1>The Work (r)Evolution</h1>
+        </div>
+        <div class="four">
+            <p>Work has indeed undergone significant transformations, yet our tools have remained stagnant, failing to keep pace with the evolving demands. In our quest to enhance productivity, we often resort to incorporating more tools and channels, inadvertently leading to a proliferation of systems that consume valuable time just to manage them. The irony lies in the fact that despite our reliance on numerous productivity apps, they often result in decreased efficiency rather than the intended improvement. Amidst this chaos, email has remained a constant, albeit somewhat archaic, necessity. However, recognizing the shortcomings of traditional email systems, we've embarked on a groundbreaking journey to reinvent it. Our aim is to cater to individuals who prioritize speed, efficiency, and seamless organization in their workflow. By streamlining the email experience and integrating innovative features, we strive to empower users to reclaim their time and enjoy a more fulfilling work-life balance. It's high time we reconsider how technology aligns with our communication needs and aspirations for a more harmonious existence.</p>
+        <p> With great email comes great responsibility. And we take that responsibility very seriously. We feel it is our duty to lead the era of modern communication With a commitment to revolutionizing communication, we are dedicated to pioneering the era of modern productivity and connectivity.</p>    
+        </div> 
+        <div class="ten">
+            <h1>Meet our team</h1> 
+        </div>
+        <div class="team">
+            <div class="member" onmouseover="showInfo(1)" onmouseout="hideInfo(1)">
+                <img src="C:\Users\dhyan\Downloads\mail\person1.jpg" alt="Dhyaneswaran">
+                <p class="role">Co Founder</p>
+                <p class="name">Dhyaneswaran</p>
+                <p class="info">Dhyaneswaran is an ambitious student and talented software engineer, currently pursuing his Bachelor's degree in Computer Science at Shiv Nadar University. Despite being in the midst of his studies, he actively contributes as a full stack developer and co-founder of DeVirTy, where he applies his burgeoning expertise in software engineering to drive innovative projects.                </p>
+            </div>
+            <div class="member" onmouseover="showInfo(2)" onmouseout="hideInfo(2)">
+                <img src="C:\Users\dhyan\Downloads\mail\person4.jpg" alt="Theajushwini">
+                <p class="role">Co Founder</p>
+                <p class="name">Theajushwini</p>
+                <p class="info">Theajushwini is a dedicated learner and proficient software engineer, presently enrolled in the Computer Science Bachelor's program at Shiv Nadar University. Amidst her academic pursuits, she actively participates as a full stack developer and co-founder of DeVirTy, utilizing her expertise in software engineering to lead innovative ventures.                </p>
+            </div>
+            <div class="member" onmouseover="showInfo(3)" onmouseout="hideInfo(3)">
+                <img src="C:\Users\dhyan\Downloads\mail\person2.jpg" alt="Deepthi">
+                <p class="name">Deepthi</p>
+                <p class="role">Co Founder</p>
+                <p class="info">Deepthi is a passionate student and skilled software engineer, currently pursuing her Bachelor's degree in Computer Science at Shiv Nadar University. Engaged in her academic journey, she actively contributes as a full stack developer and co-founder of DeVirTy, harnessing her expertise in software engineering to drive innovative projects.                    </p> 
+            </div>
+        </div>
+        <div class="six">
+            <h1>Help build the future you want to live</h1> 
+            <h2>in</h2>
+        </div>
+        <div class="seven">
+            <p>Our team combines deep mathematical and technical knowledge from the world’s top research institutions with expertise in building remarkable and easy-to-use services. By joining our team,</p>
+        </div>
+            <div class="eight">
+           <P> you can help build a different and better internet for now and for the future.</P>
+        </div> 
+        <div class="nine">
+            <button type="button" onclick="redirectToJoinUsPage()">JOIN US<span></span></button>
+        </div>
+    </div>
+    <script>
+    function showInfo(index) {
+        const infoElement = document.querySelectorAll(".member .info")[index - 1];
+        infoElement.style.display = "block";
+    }
+    function hideInfo(index) {
+        const infoElement = document.querySelectorAll(".member .info")[index - 1];
+        infoElement.style.display = "none";
+    }
+    function redirectToJoinUsPage() {
+        window.location.href = "file:///C:/Users/dhyan/Downloads/mail/joinus.html";
+    }
+</script>
+</body>
+</html>
